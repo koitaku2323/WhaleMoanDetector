@@ -27,7 +27,7 @@ from PIL import ImageOps
 from PIL import Image, ImageDraw
 
 
-directory_path = "L:\\Sonobuoy_faster-rCNN\\labeled_data\\logs\\CalCOFI_split_by_deployment" # point to modified annotation files
+directory_path = "C:\\Users\\aryye\\OneDrive\\Documents\\GitHub\\WhaleMoanDetector\\labeled_data\\logs\\CalCOFI_split_by_deployment" # point to modified annotation files
 all_files = glob.glob(os.path.join(directory_path,'*.csv')) # path for all files
 
 
@@ -126,7 +126,7 @@ for file in all_files:
     # Parse the unique part of the filename you want to use for naming
     unique_name_part = Path(file).stem.split('_')[0]  # Adjust index as needed
     annotations_df = pd.read_csv(file)
-    output_directory = 'L:\\Sonobuoy_faster-rCNN\\labeled_data\\spectrograms\\CalCOFI_2008_08'
+    output_directory = 'C:\\Users\\aryye\\OneDrive\\Documents\\GitHub\\WhaleMoanDetector\\labeled_data\\spectrograms\\CalCOFI_2008_08'
 
     # Call your function to process the annotations and generate spectrograms
     generate_spectrogram_and_annotations(unique_name_part,annotations_df, output_directory, window_size=60, overlap_size=30)

@@ -16,7 +16,9 @@ from IPython.display import display  # Import the display function
 import os
 # Assuming annotations.csv is located in the proper path
 # Load annotations
-annotations = pd.read_csv('L:\\Sonobuoy_faster-rCNN\\labeled_data\\train_val_test_annotations\\train.csv')
+# annotations = pd.read_csv('L:\\Sonobuoy_faster-rCNN\\labeled_data\\train_val_test_annotations\\train.csv')
+annotations = pd.read_csv('C:\\Users\\aryye\\OneDrive\\Documents\\GitHub\\WhaleMoanDetector\\labeled_data\\train_val_test_annotations\\train.csv')
+
 
 # Function to plot bounding boxes and labels on the spectrograms
 def plot_annotated_spectrograms(annotations):

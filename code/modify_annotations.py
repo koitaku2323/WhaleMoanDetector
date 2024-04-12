@@ -26,10 +26,10 @@ import random
 import pandas as pd
 import numpy as np
 
-directory_path = "/Users/luisbarajas/Desktop/Projects/Course_Projects/pstat_197" # point to original logger files
+directory_path = "C:\\Users\\aryye\\OneDrive\\Desktop\\master_wav_sonobuoy\\master_wav_sonobuoy" # point to original logger files
 all_files = glob.glob(os.path.join(directory_path,'*.xls')) # path for all files
 
-new_base_path = '/Users/luisbarajas/Desktop/Projects/Course_Projects/pstat_197/master_wav_sonobuoy' # path to change to 
+new_base_path = "C:\\Users\\aryye\\OneDrive\\Desktop\\master_wav_sonobuoy\\master_wav_sonobuoy" # path to change to 
 
 # hepler function uses WAVhdr to read wav file header info and extract wav file start time as a datetime object
 def extract_wav_start(path):
@@ -52,7 +52,7 @@ def modify_annotations(df):
     df['audio_file'] = [path.replace("\\", "/") for path in modified_paths]
     
     # Removing a defective wave file
-    df = df[df['audio_file'] != "/Users/luisbarajas/Desktop/Projects/Course_Projects/pstat_197/master_wav_sonobuoy/CC0711-SB02-071103-214000.d24.wav"].copy()
+    df = df[df['audio_file'] != "C:\\Users\\aryye\\OneDrive\\Desktop\\master_wav_sonobuoy\\master_wav_sonobuoy\\CC0711-SB02-071103-214000.d24.wav"].copy()
     
     # Creating the date_time column
     file_datetimes = []

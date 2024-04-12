@@ -27,7 +27,7 @@ from PIL import ImageOps
 from PIL import Image, ImageDraw
 
 
-directory_path = "C:\\Users\\aryye\\OneDrive\\Documents\\GitHub\\WhaleMoanDetector\\labeled_data\\logs\\CalCOFI_split_by_deployment" # point to modified annotation files
+directory_path = "C:\\Users\\aryye\\OneDrive\\Documents\\GitHub\\WhaleMoanDetector\\labeled_data\\logs\\CalCOFI_split_by_deployment\\modified_annotations" # point to modified annotation files
 all_files = glob.glob(os.path.join(directory_path,'*.csv')) # path for all files
 
 
